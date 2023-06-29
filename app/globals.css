@@ -13,17 +13,17 @@
 
         background:
             radial-gradient(
-                rgba(115, 24, 219, .4) 1.5px,
-                transparent 2px,
+                hsla(268, 30%, 35%, 0.4) 2px,
+                transparent 2.5px,
                 transparent
             ),
             radial-gradient(
-                rgba(115, 24, 219, .4) 1.5px,
-                transparent 2px,
+                hsla(268, 30%, 35%, 0.4) 2px,
+                transparent 2.5px,
                 transparent
-            ) 1rem 1rem;
+            ) 2rem 2rem;
 
-        background-size: 2rem 2rem;
+        background-size: 4rem 4rem;
         background-attachment: fixed;
     }
 }
