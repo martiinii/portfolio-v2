@@ -1,5 +1,5 @@
-import { CardTitle } from "../ui/card"
-import { Separator } from "../ui/separator"
+import { CardTitle } from "@/components/ui/card"
+import { Separator } from "@/components/ui/separator"
 
 type ProjectHeaderProps = {
     title: string,

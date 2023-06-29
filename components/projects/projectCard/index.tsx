@@ -1,8 +1,8 @@
-import { ButtonIconLink } from "../ui/buttonIconLink"
-import { Card, CardHeader, CardDescription, CardContent, CardFooter } from "../ui/card"
-import { Badge } from "../ui/badge"
 import { ProjectType } from "@/projects"
 import { ProjectHeader } from "./projectHeader"
+import { Badge } from "@/components/ui/badge"
+import { ButtonIconLink } from "@/components/ui/buttonIconLink"
+import { Card, CardHeader, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 
 
 type SkillBadgeProps = {
