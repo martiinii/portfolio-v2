@@ -14,7 +14,7 @@ export const portfolioV1Project: ProjectType = {
         },
         {
             title: 'Website',
-            href: 'https://portfolio-v1/martiinii.dev',
+            href: 'https://portfolio-v1.martiinii.dev',
             icon: ExternalLinkIcon
         }
     ]

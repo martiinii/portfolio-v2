@@ -1,5 +1,8 @@
 import { ProjectType } from "@/projects"
 import { ProjectCard } from "../projectCard"
+import { Badge } from "../ui/badge"
+import { BookmarkFilledIcon, ChatBubbleIcon, GearIcon, RocketIcon } from "@radix-ui/react-icons"
+import { Separator } from "../ui/separator"
 
 type WithChildrenProps = {
     children: React.ReactNode
@@ -33,7 +36,15 @@ export const ProjectListSection = ({ projects }: ProjectListSectionProps) => {
 
     return (
         <section className='bg-slate-950 max-w-7xl m-auto p-6'>
-            <h3 className='font-bold text-4xl mb-8 text-center'>My projects</h3>
+            <header className="text-center mb-8">
+                <h3 className='font-bold text-5xl mb-4'>My projects</h3>
+                <Badge className="mb-5 text-sm space-x-2" variant={'outline'}>
+                    <RocketIcon className="scale-125" />
+                    <Separator orientation="vertical" className="h-5" />
+                    <span>Blog is coming soon</span>
+                </Badge>
+            </header>
+
             <div className='grid grid-cols-1 lg:grid-cols-2 w-fit mx-auto gap-4 group/list'>
                 {masonryArray.map((projects, wi) => (
                     <MasonryWrapper key={wi}>
