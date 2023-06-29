@@ -1,8 +1,10 @@
 type SkillType = 'JavaScript'
     | 'TypeScript'
+    | 'Python'
 
     | 'React'
     | 'Next.js'
+    | 'Gatsby'
     | 'Electron'
     | 'HTML'
 
