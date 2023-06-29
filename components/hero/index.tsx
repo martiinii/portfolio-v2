@@ -8,7 +8,7 @@ export const Hero = () => (
         after:absolute after:-z-10 after:bg-gradient-to-b after:from-black after:via-transparent after:to-slate-950 after:inset-0'>
             <h1 className='text-6xl sm:text-8xl font-black'>I&apos;m Martin</h1>
             <h2 className='text-4xl sm:text-6xl my-4 font-bold'>
-                <span className='from-blue-500 to-cyan-400 bg-gradient-to-r bg-clip-text text-transparent'>Frontend</span> web-developer</h2>
+                <span className='from-blue-500 to-cyan-400 bg-gradient-to-r bg-clip-text text-transparent'>Frontend</span> <span className="whitespace-nowrap">web-developer</span></h2>
             <div className="flex gap-4 justify-center mt-5">
                 <HeroButtonLink
                     href="https://github.com/Martiinii"
