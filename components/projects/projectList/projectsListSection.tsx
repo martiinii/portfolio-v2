@@ -1,8 +1,8 @@
 import { ProjectType } from "@/projects"
 import { ProjectCard } from "../projectCard"
-import { Badge } from "../ui/badge"
-import { BookmarkFilledIcon, ChatBubbleIcon, GearIcon, RocketIcon } from "@radix-ui/react-icons"
-import { Separator } from "../ui/separator"
+import { RocketIcon } from "@radix-ui/react-icons"
+import { Badge } from "@/components/ui/badge"
+import { Separator } from "@/components/ui/separator"
 
 type WithChildrenProps = {
     children: React.ReactNode
