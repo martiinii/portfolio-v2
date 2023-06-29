@@ -19,7 +19,7 @@ const ButtonIconLink = React.forwardRef<HTMLButtonElement, ButtonIconLinkProps>(
                 {...props}
                 asChild
             >
-                <Link href={href} title={title} className={cn('flex gap-2', linkClass)} {...restLinkProps}>
+                <Link href={href} title={title} className={cn('flex gap-2.5', linkClass)} {...restLinkProps}>
                     {icon}
                     {children}
                 </Link>
