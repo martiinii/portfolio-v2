@@ -9,7 +9,7 @@ export const climberProject: ProjectType = {
     links: [
         {
             title: 'Demo',
-            href: 'https://climber-demo.vercel.com',
+            href: 'https://climber-demo.martiinii.dev',
             icon: ExternalLinkIcon
         }
     ]
