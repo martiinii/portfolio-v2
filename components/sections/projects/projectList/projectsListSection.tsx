@@ -40,7 +40,7 @@ export const ProjectListSection = ({ projects }: ProjectListSectionProps) => {
     return (
         <section className='bg-slate-950 max-w-7xl m-auto p-6'>
             <header className="text-center mb-8">
-                <h3 className='font-bold text-5xl mb-4'>My projects</h3>
+                <h2 className='font-bold text-5xl mb-4'>My projects</h2>
                 <Badge className="mb-5 text-sm space-x-2" variant={'outline'}>
                     <RocketIcon className="scale-125" />
                     <Separator orientation="vertical" className="h-5" />
