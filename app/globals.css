@@ -4,6 +4,7 @@
 
 @layer components {
     .gradient-dot::before {
+        --gradient-spacing: 1.8rem;
         /* background-image: radial-gradient(
             rgba(115, 24, 219, .4) 1.5px,
             transparent 2px
@@ -21,9 +22,9 @@
                 hsla(268, 30%, 35%, 0.4) 2px,
                 transparent 2.5px,
                 transparent
-            ) 2rem 2rem;
+            ) var(--gradient-spacing) var(--gradient-spacing);
 
-        background-size: 4rem 4rem;
+        background-size: calc(var(--gradient-spacing) * 2) calc(var(--gradient-spacing) * 2);
         background-attachment: fixed;
     }
 }
