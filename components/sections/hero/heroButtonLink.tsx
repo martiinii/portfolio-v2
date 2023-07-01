@@ -1,4 +1,4 @@
-import { ButtonIconLink } from "../ui/buttonIconLink"
+import { ButtonIconLink } from "../../ui/buttonIconLink"
 
 type HeroButtonLinkProps = {
     href: string,

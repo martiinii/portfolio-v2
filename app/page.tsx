@@ -1,6 +1,6 @@
-import { Footer } from '@/components/footer'
-import { Hero } from '@/components/hero'
-import { MyProjects } from '@/components/projects/projectList'
+import { Footer } from '@/components/sections/footer'
+import { Hero } from '@/components/sections/hero'
+import { MyProjects } from '@/components/sections/projects/projectList'
 
 export default function Home() {
     return (
