@@ -1,11 +1,27 @@
+import { PostHeader } from "@/components/blog/post/header";
+import { Separator } from "@/components/ui/separator";
+import { getPostById } from "@/lib/blogPosts"
+
 export default function RootLayout({
     children,
+    params
 }: {
-    children: React.ReactNode
+    children: React.ReactNode,
+    params: {
+        id: string
+    }
 }) {
+    const post = getPostById(params.id);
+    if (!post) return;
+
     return (
-        <article className="prose prose-invert lg:prose-xl mx-auto max-w-7xl p-5 lg:p-10">
-            {children}
-        </article>
+        <>
+            <PostHeader date={post.data.date}>{post.data.title}</PostHeader>
+            <Separator />
+
+            <article className="prose prose-invert md:prose-xl my-10">
+                {children}
+            </article>
+        </>
     )
 }

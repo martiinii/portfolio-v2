@@ -1,6 +1,6 @@
 import { InputMDX } from "@/components/mdx/inputMDX";
 import { getPostById, getPostsIds } from "@/lib/blogPosts";
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 
@@ -14,23 +14,20 @@ export default function BlogPost({ params }: Props) {
     if (!post) return;
 
     return (
-        <>
-            <h1>{post.data.title}</h1>
-            <MDXRemote
-                source={post.content}
-                options={{
-                    mdxOptions: {
-                        remarkPlugins: [
-                            remarkGfm
-                        ],
+        <MDXRemote
+            source={post.content}
+            options={{
+                mdxOptions: {
+                    remarkPlugins: [
+                        remarkGfm
+                    ],
 
-                    },
-                }}
-                components={{
-                    input: props => <InputMDX {...props} />
-                }}
-            />
-        </>
+                },
+            }}
+            components={{
+                input: props => <InputMDX {...props} />
+            }}
+        />
     )
 }
 
