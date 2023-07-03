@@ -1,4 +1,4 @@
-import { EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon, ReaderIcon } from "@radix-ui/react-icons";
 import { HeroButtonLink } from "./heroButtonLink";
 
 export const Hero = () => (
@@ -24,6 +24,12 @@ export const Hero = () => (
                     href="mailto:me.martiinii@gmail.com"
                     title="Email"
                     icon={<EnvelopeClosedIcon className="scale-200" />}
+                />
+                <HeroButtonLink
+                    sameTab
+                    href="/blog"
+                    title="Blog"
+                    icon={<ReaderIcon className="scale-200" />}
                 />
             </div>
         </div>
