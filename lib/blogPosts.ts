@@ -21,7 +21,8 @@ const getFileContent = (path: string) => {
 
 
 type frontMatterTypes = {
-    title: string
+    title: string,
+    date: string
 }
 
 export const getPostById = (slug: string) => {
@@ -37,4 +38,19 @@ export const getPostById = (slug: string) => {
         data: data as frontMatterTypes,
         content
     }
+}
+
+export const getAllPosts = () => {
+    const ids = getPostsIds();
+    const posts = ids.map(id => ({ ...getPostById(id)!, href: id })).sort((a, b) => a.data.date > b.data.date ? -1 : 1)
+
+    return posts;
+}
+
+export const dateToString = (date: string) => {
+    return new Date(date).toLocaleDateString('en-US', {
+        month: 'short',
+        day: '2-digit',
+        year: 'numeric'
+    });
 }
