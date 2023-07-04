@@ -44,8 +44,8 @@ export const ProjectListSection = ({ projects }: ProjectListSectionProps) => {
             <header className="text-center mb-8">
                 <h2 className='font-bold text-5xl mb-5'>My projects</h2>
 
-                <Link href={'/blog'} className={badgeVariants({ variant: 'outline', className: 'mb-5 text-base space-x-2 hover:bg-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-offset-background' })} >
-                    <span>Check out my blog</span>
+                <Link href={'/blog'} className={badgeVariants({ variant: 'outline', className: 'mb-5 space-x-2 hover:bg-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-offset-background' })} >
+                    <span className="text-sm">Check out my blog</span>
                     <Separator orientation="vertical" className="h-5" />
                     <RocketIcon className="scale-125" />
                 </Link>
