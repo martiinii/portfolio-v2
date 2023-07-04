@@ -1,8 +1,8 @@
 1:HL["/portfolio-v2/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/portfolio-v2/_next/static/css/75fdeefb65bba07d.css",{"as":"style"}]
-0:["hg4e8xt0ZiWeKyMoFCGML",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/portfolio-v2/_next/static/css/75fdeefb65bba07d.css","precedence":"next"}]],["$L4",["$","meta",null,{"name":"next-size-adjust"}]]]]]]
-5:I{"id":"3211","chunks":["272:static/chunks/webpack-171b2ae0dddf1afc.js","253:static/chunks/bce60fc1-bf10417a50a20e33.js","769:static/chunks/769-9a6580dca7bcdd4f.js"],"name":"","async":false}
-6:I{"id":"5767","chunks":["272:static/chunks/webpack-171b2ae0dddf1afc.js","253:static/chunks/bce60fc1-bf10417a50a20e33.js","769:static/chunks/769-9a6580dca7bcdd4f.js"],"name":"","async":false}
+2:HL["/portfolio-v2/_next/static/css/3920e608bea94884.css",{"as":"style"}]
+0:["Phs03Zs-iXHQ5ePB69--b",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/portfolio-v2/_next/static/css/3920e608bea94884.css","precedence":"next"}]],["$L4",["$","meta",null,{"name":"next-size-adjust"}]]]]]]
+5:I{"id":"3211","chunks":["272:static/chunks/webpack-6c2dbb13559ca35d.js","253:static/chunks/bce60fc1-bf10417a50a20e33.js","769:static/chunks/769-9a6580dca7bcdd4f.js"],"name":"","async":false}
+6:I{"id":"5767","chunks":["272:static/chunks/webpack-6c2dbb13559ca35d.js","253:static/chunks/bce60fc1-bf10417a50a20e33.js","769:static/chunks/769-9a6580dca7bcdd4f.js"],"name":"","async":false}
 7:I{"id":"7477","chunks":["477:static/chunks/477-7321f3e031ea16d8.js","768:static/chunks/app/blog/layout-852fdfa85564f964.js"],"name":"","async":false}
 8:I{"id":"1960","chunks":["524:static/chunks/524-417811b33441a0a9.js","718:static/chunks/app/blog/[id]/layout-d1f04a86c7dc4b29.js"],"name":"Separator","async":false}
 9:I{"id":"303","chunks":["524:static/chunks/524-417811b33441a0a9.js","477:static/chunks/477-7321f3e031ea16d8.js","364:static/chunks/364-f6a9b4f8628ecf38.js","931:static/chunks/app/page-5d535774aef098d4.js"],"name":"Accordion","async":false}
