@@ -5,12 +5,12 @@ date: "2023-07-03T12:02:28.631Z"
 
 Climber is second version of a two-part application I have developed for my client for keeping track of people on climbing walls.
 
-It is divided into two parts: web application (admin dashboard) and Windows native application (for employees) that are communicating with each other via REST api and websockets.
+It is divided into two parts: web application (admin dashboard) and Windows native application (for employees) that are communicating with each other via REST api and web sockets.
 
 ## Why second version?
 
 First version was *very* limited. It was created when I had some experience with JavaScript and was switching to Node.js environment.
-Electron was pretty huge thing for me in that time and I did not fully understood things like IPC to create safe applications.
+Electron was pretty huge thing for me in that time and I did not fully understand things like IPC to create safe applications.
 
 In this version I used [secure boilerplate for Electron](https://github.com/cawa-93/vite-electron-builder).
 
@@ -26,7 +26,7 @@ Purpose of the application was exactly the same:
 - Sell tickets
 - Add people to database
 - Keep track of user's remaining time
-- Generate daily raports
+- Generate daily reports
 
 With some extra things in my mind, I decided to use TypeScript, Electron, React, Chakra UI, Pusher, Prisma and SQLite.
 
@@ -46,29 +46,29 @@ That is how I created [CSR controller](https://www.npmjs.com/package/csr-control
 
 ## How does synchronization work?
 
-There are two ways Climber synchronize data. Real-time view using websockets and data-saving using REST api.
+There are two ways Climber synchronize data. Real-time view using web sockets and data-saving using REST api.
 
 ### Real-time view
 
-I've chosen Pusher because of it's nice free-trier and their great API. When app is launched, it performs multiple steps:
+I've chosen Pusher because of its nice free-tier and their great API. When app is launched, it performs multiple steps:
 
 1. Load variables from database (including credentials to dashboard)
 2. Login in to dashboard
 4. If there are any non-synced users, synchronize them
 3. Initialize Pusher connection (presence-channel)
-4. Check for update
+4. Check for updates
 
-This Pusher setup allows me to identify each connection so I can keep track of every device or user viewing dashboard and send data only when it's needed.
+This Pusher setup allows me to identify each connection, so I can keep track of every device or user viewing dashboard and send data only when it's needed.
 
 ### REST synchronization
 
 I'm importing functions generated from CSR-controller from dashboard to application and using them to create and update people.
 
-## What could be imporoved?
+## What could be improved?
 
 Short answer: **many things**  
 Even though I tried to think of *everything* it's just not possible in reality.
 I could add custom themes that you get to choose from settings, dashboard customization, comparing two or more climbing walls with each other, more statistics.
 Database could also be improved to use Prisma migration engine (it's on my TODO list), but for now I don't plan to change database schema.
 
-But for now, this version is a really big improvement over first. I really enjoyed developing it, even though sometimes I wanted to throw it into trash and start all over again.
+But for now, this version is a huge improvement over first. I really enjoyed developing it, even though sometimes I wanted to throw it into trash and start all over again.
