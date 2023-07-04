@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from "@radix-ui/react-icons";
+import { ExternalLinkIcon, ReaderIcon } from "@radix-ui/react-icons";
 import { ProjectType } from ".";
 
 export const climberProject: ProjectType = {
@@ -11,6 +11,11 @@ export const climberProject: ProjectType = {
             title: 'Demo',
             href: 'https://climber-demo.martiinii.dev',
             icon: ExternalLinkIcon
+        },
+        {
+            title: 'Post on blog',
+            href: '/blog/climber',
+            icon: ReaderIcon
         }
     ]
 }
