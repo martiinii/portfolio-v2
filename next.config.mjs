@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
+    // output: 'export',
     // mdxRs is rust-based MDX compiler. Not recommended for production
     // experimental: {
     //     mdxRs: true
