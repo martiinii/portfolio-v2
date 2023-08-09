@@ -1,16 +1,24 @@
-import { CardTitle } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
+import { CardHeader } from "@/components/ui/card"
+import Image, { StaticImageData } from "next/image"
 
 type ProjectHeaderProps = {
     title: string,
-    date: string
+    img?: StaticImageData
 }
-export const ProjectHeader = ({ title, date }: ProjectHeaderProps) => {
+export const ProjectHeader = ({ title, img }: ProjectHeaderProps) => {
     return (
-        <header className="flex gap-4 items-center">
-            <CardTitle>{title}</CardTitle>
-            <Separator orientation="vertical" className="h-8" />
-            <span>{date}</span>
-        </header>
+        // Fix padding if there is no image available by dividing it by 2
+        <CardHeader className={img ? undefined : 'p-3'}>
+            {img &&
+                <Image
+                    src={img}
+                    alt={`${title} graphic`}
+                    className="rounded-t-xl img-mask"
+                    placeholder="blur"
+                />
+            }
+        </CardHeader>
+
+
     )
 }
