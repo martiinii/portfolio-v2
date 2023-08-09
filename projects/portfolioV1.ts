@@ -4,7 +4,8 @@ import { ProjectType } from ".";
 export const portfolioV1Project: ProjectType = {
     title: 'Portfolio v1',
     date: 'July 2022',
-    description: 'First version of my personal website',
+    shortDescription: 'First version of my personal website',
+    description: 'Created when I first started applying for jobs.',
     skills: ['React', 'JavaScript', 'Tailwind'],
     links: [
         {

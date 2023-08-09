@@ -1,11 +1,14 @@
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { ProjectType } from ".";
+import cottagesImage from '@/public/projects/smrekowka.png';
 
 export const cottagesProject: ProjectType = {
     title: 'Cottages for rent',
     date: 'January 2022',
-    description: 'Websites with information about two houses for rent. Built in booking system and admin dashboard',
+    shortDescription: 'Websites with informations and image galleries for two houses located in Zakopane',
+    description: 'Built in booking system and admin dashboard for managing clients.',
     skills: ['HTML', 'JavaScript', 'CSS'],
+    img: cottagesImage,
     links: [
         {
             title: 'Smrekówka',

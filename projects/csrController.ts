@@ -1,11 +1,14 @@
 import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 import { ProjectType } from ".";
+import npmImage from '@/public/projects/npm.png'
 
 export const csrControllerProject: ProjectType = {
     title: 'CSR Controller',
     date: 'April 2023',
-    description: 'Small library for creating type-safe database controllers between client and api server. Built in support for middleware, Next.js and Electron',
+    shortDescription: 'Create typesafe database controller between frontend and backend',
+    description: 'Small library for creating end-to-end typesafe API. Built in support for middleware, Next.js and Electron',
     skills: ['TypeScript', 'Jest', 'NPM Package'],
+    img: npmImage,
     links: [
         {
             title: 'Github',

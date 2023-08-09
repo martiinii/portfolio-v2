@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image"
 import { climberProject } from "./climber"
 import { cottagesProject } from "./cottages"
 import { csrControllerProject } from "./csrController"
@@ -8,10 +9,12 @@ import { portfolioV2Project } from "./portfolioV2"
 
 export type ProjectType = {
     title: string,
+    shortDescription: string,
     description: string,
     date: string,
     skills: SkillType[]
-    links: LinkType[]
+    links: LinkType[],
+    img?: StaticImageData
 }
 
 export type LinkType = {
@@ -24,8 +27,8 @@ export type LinkType = {
 export const projectsList = [
     portfolioV2Project,
     climberProject,
-    csrControllerProject,
     mcuProject,
+    csrControllerProject,
     eLibraryProject,
     cottagesProject,
     portfolioV1Project
