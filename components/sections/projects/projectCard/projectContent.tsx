@@ -17,8 +17,8 @@ type ProjectContentProps = {
 }
 export const ProjectContent = ({ title, shortDescription, description, date, skills, links }: ProjectContentProps) => {
     return (
-        <CardContent className="flex gap-6 justify-between items-center">
-            <section>
+        <CardContent className="flex flex-col sm:flex-row gap-6 justify-between sm:items-center">
+            <section className="space-y-1.5">
                 <div className="flex gap-4 items-center">
                     <CardTitle>{title}</CardTitle>
                     <Separator orientation="vertical" className="h-8" />
@@ -33,6 +33,7 @@ export const ProjectContent = ({ title, shortDescription, description, date, ski
                     <ButtonIcon
                         icon={<ChevronRightIcon className="scale-110" />}
                         className="px-6"
+                        variant={'secondary'}
                     />
                 </DialogTrigger>
 
