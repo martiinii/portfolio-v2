@@ -40,6 +40,7 @@ I've quickly realized that most of the songs had one comment. It was embedded Yo
 I knew that probably not every song had the link, but after checking 20 of songs, not a single one had missing link. It was good enough for me.
 
 Also, every song had image cover provided. After checking the source, I saved this link: `https://usdb.animux.de/data/cover/[ID].jpg`
+
 ## Joining everything together
 After some time of testing and debugging I had my script ready and working *(although in many pieces)*.
 Some songs used different format for metadata, some included path to cover image, some did not.
@@ -47,5 +48,17 @@ I decided to change each song metadata before saving it. It saved me so much tro
 
 Before the end of the day, the script was polished and ready to use. We have downloaded ~100 songs and discovered a few bugs that were easy to fix.
 
+
+## Things I learned
+Regex was always a hard thing to grasp on for me, but I had to use it few times in this project.
+I've learned how to use lazy quantifier and I can spot where it should go before testing.
+
+I had to recall how to read files and parse them into objects.
+
+The thing that I had most trouble with - YouTube download. It was made to be asynchronous, but I couldn't await it because it was using callbacks to signalize the end.
+Not a single solution came to my mind. After some reading I realized I can just wrap everything in promise and either reject or resolve it in callbacks.
+
 This project is available for anyone on my [GitHub](https://github.com/Martiinii/UltraScrap/).
+
 *Happy singing!*
+
