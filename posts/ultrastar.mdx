@@ -1,0 +1,51 @@
+---
+title: "How I created UltraStar scrapper"
+date: "2023-08-22T21:17:03.754Z"
+---
+
+When I met my friends recently we had a karaoke. Everything was fine until we wanted to sing latest songs.
+They were not available anywhere. Our [main source](https://ultrastar-es.org/en/canciones) of songs takes a lot of time to upload new songs, sometimes years.
+This meant I had to search for another solution.
+
+I came across this [reddit post](https://www.reddit.com/r/karaoke/comments/mvk8th/ultrastar_songs/) that listed sources for UltraStar songs.
+After going through each of them, I saw that [the german one]([http://usdb.animux.de/](http://usdb.animux.de/)) had *a lot* of songs, even the latest one from past month.
+This was perfect! *But..*
+
+## Where is audio?
+Turns out it was just a database of lyrics. They didn't include audio or video for any song.
+At that time I didn't knew how UltraStar works exactly under the hood, so I just looked at the few songs I had on my disk.
+They were made of:
+- Lyrics file
+- Cover image
+- Audio track
+- Video track
+The lyrics file also had some metadata about the song, like title, artist, year start/end timestamps, BPM and filenames for audio/video.
+
+That gave me the exact knowledge I was looking for.
+I created an account to download files from database, and downloaded **I'm Just Ken**.
+Or tried to, because I had to wait 25 seconds before I could access the site. I quickly opened dev tools to check what was going on.
+
+## A little bit of reverse engineering later
+They encourage users to upload their own music. Once they upload, they would reduce waiting time.
+Reduced time wasn't enough for me though. After quick look into dev tools I noticed that after 25 seconds, a POST request is made with some form data.
+I opened Insomnia, put the data in along with login cookie and *bahm!* It worked.
+
+The request is made to the same song link, but is using POST method instead of GET. It also includes this form data:
+```
+wd = 1
+```
+
+## Where to get audio/music?
+I've quickly realized that most of the songs had one comment. It was embedded YouTube video to the uploaded song. It was like a miracle.
+I knew that probably not every song had the link, but after checking 20 of songs, not a single one had missing link. It was good enough for me.
+
+Also, every song had image cover provided. After checking the source, I saved this link: `https://usdb.animux.de/data/cover/[ID].jpg`
+## Joining everything together
+After some time of testing and debugging I had my script ready and working *(although in many pieces)*.
+Some songs used different format for metadata, some included path to cover image, some did not.
+I decided to change each song metadata before saving it. It saved me so much trouble early on, because video path was often made of 3 links to different websites *and no, they didn't work with UltraStar*.
+
+Before the end of the day, the script was polished and ready to use. We have downloaded ~100 songs and discovered a few bugs that were easy to fix.
+
+This project is available for anyone on my [GitHub](https://github.com/Martiinii/UltraScrap/).
+*Happy singing!*
