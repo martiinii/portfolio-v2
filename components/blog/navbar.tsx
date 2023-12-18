@@ -1,16 +1,24 @@
-import { CubeIcon, HomeIcon, ReaderIcon } from "@radix-ui/react-icons"
-import { ButtonIconLink } from "../ui/buttonIconLink"
+import { BoxIcon, ScrollTextIcon } from "lucide-react"
+import { IconLinkButton } from "../ui/iconLinkButton"
 
 export const BlogNavbar = () => {
     return (
         <nav className="mx-auto w-fit mt-5 space-x-6">
-            <ButtonIconLink href="/blog" icon={<ReaderIcon className="scale-150" />} variant={'ghost'}>
+            <IconLinkButton
+                href="/blog"
+                icon={ScrollTextIcon}
+                variant={'ghost'}
+            >
                 Blog
-            </ButtonIconLink>
+            </IconLinkButton>
 
-            <ButtonIconLink href="/" icon={<CubeIcon className="scale-150" />} variant={'ghost'}>
+            <IconLinkButton
+                href="/"
+                icon={BoxIcon}
+                variant={'ghost'}
+            >
                 Portfolio
-            </ButtonIconLink>
+            </IconLinkButton>
         </nav>
     )
 }

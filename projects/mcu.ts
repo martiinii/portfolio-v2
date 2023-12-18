@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from "@radix-ui/react-icons";
+import { ExternalLinkIcon } from "lucide-react";
 import { ProjectType } from ".";
 import mcuImage from '@/public/projects/mcu.png'
 

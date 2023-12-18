@@ -6,6 +6,7 @@ import { eLibraryProject } from "./eLibrary"
 import { mcuProject } from "./mcu"
 import { portfolioV1Project } from "./portfolioV1"
 import { portfolioV2Project } from "./portfolioV2"
+import { LucideIcon } from "lucide-react"
 
 export type ProjectType = {
     title: string,
@@ -20,7 +21,7 @@ export type ProjectType = {
 export type LinkType = {
     href: string,
     title: string,
-    icon: React.ForwardRefExoticComponent<any>
+    icon: LucideIcon
 }
 
 

@@ -1,5 +1,5 @@
-import { EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon, ReaderIcon } from "@radix-ui/react-icons"
 import { HeroButtonLink } from "./heroButtonLink"
+import { GithubIcon, LinkedinIcon, MailIcon, ScrollTextIcon } from "lucide-react"
 
 export const HeroButtons = () => {
     return (
@@ -7,23 +7,23 @@ export const HeroButtons = () => {
             <HeroButtonLink
                 href="https://github.com/Martiinii"
                 title="Github"
-                icon={<GitHubLogoIcon className="scale-200" />}
+                icon={GithubIcon}
             />
             <HeroButtonLink
                 href="https://www.linkedin.com/in/marcin-g%C4%85sienica-makowski-990a4923a/"
                 title="LinkedIn"
-                icon={<LinkedInLogoIcon className="scale-200" />}
+                icon={LinkedinIcon}
             />
             <HeroButtonLink
                 href="mailto:me.martiinii@gmail.com"
                 title="Email"
-                icon={<EnvelopeClosedIcon className="scale-200" />}
+                icon={MailIcon}
             />
             <HeroButtonLink
                 sameTab
                 href="/blog"
                 title="Blog"
-                icon={<ReaderIcon className="scale-200" />}
+                icon={ScrollTextIcon}
             />
         </div>
     )

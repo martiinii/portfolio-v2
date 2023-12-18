@@ -1,4 +1,4 @@
-import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import { ExternalLinkIcon, GithubIcon } from "lucide-react";
 import { ProjectType } from ".";
 
 export const portfolioV1Project: ProjectType = {
@@ -11,7 +11,7 @@ export const portfolioV1Project: ProjectType = {
         {
             title: 'Github',
             href: 'https://github.com/Martiinii/portfolio',
-            icon: GitHubLogoIcon
+            icon: GithubIcon
         },
         {
             title: 'Website',

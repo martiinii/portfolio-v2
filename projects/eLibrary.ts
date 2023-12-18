@@ -1,4 +1,4 @@
-import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import { ExternalLinkIcon, GithubIcon } from "lucide-react";
 import { ProjectType } from ".";
 import eLibraryImage from '@/public/projects/elibrary.png'
 
@@ -13,7 +13,7 @@ export const eLibraryProject: ProjectType = {
         {
             title: 'Github',
             href: 'https://github.com/Martiinii/eLibrary',
-            icon: GitHubLogoIcon
+            icon: GithubIcon
         },
         {
             title: 'Website',

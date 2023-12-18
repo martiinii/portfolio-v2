@@ -1,11 +1,11 @@
 import { Badge } from "@/components/ui/badge"
-import { ButtonIcon } from "@/components/ui/buttonIcon"
-import { ButtonIconLink } from "@/components/ui/buttonIconLink"
 import { CardContent, CardDescription, CardTitle } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
+import { IconButton } from "@/components/ui/iconButton"
+import { IconLinkButton } from "@/components/ui/iconLinkButton"
 import { Separator } from "@/components/ui/separator"
 import { LinkType } from "@/projects"
-import { ChevronRightIcon } from "@radix-ui/react-icons"
+import { ChevronRightIcon } from "lucide-react"
 
 type ProjectContentProps = {
     title: string,
@@ -30,8 +30,8 @@ export const ProjectContent = ({ title, shortDescription, description, date, ski
 
             <Dialog>
                 <DialogTrigger asChild>
-                    <ButtonIcon
-                        icon={<ChevronRightIcon className="scale-110" />}
+                    <IconButton
+                        icon={ChevronRightIcon}
                         className="px-6"
                         variant={'secondary'}
                     />
@@ -83,11 +83,10 @@ const ProjectLinks = ({ links }: ProjectLinksProps) => {
             <DialogTitle>Links</DialogTitle>
             <div className="flex flex-col gap-4">
                 {links.map(l => {
-                    const Icon = l.icon;
                     return (
-                        <ButtonIconLink
+                        <IconLinkButton
                             href={l.href}
-                            icon={<Icon className='scale-150' />}
+                            icon={l.icon}
                             title={l.title}
                             variant={'secondary'}
                             key={l.title}
@@ -96,7 +95,7 @@ const ProjectLinks = ({ links }: ProjectLinksProps) => {
                             }}
                         >
                             {l.title}
-                        </ButtonIconLink>
+                        </IconLinkButton>
                     )
                 })}
             </div>

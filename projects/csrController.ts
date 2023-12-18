@@ -1,4 +1,4 @@
-import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import { ExternalLinkIcon, GithubIcon } from "lucide-react";
 import { ProjectType } from ".";
 import npmImage from '@/public/projects/npm.png'
 
@@ -13,7 +13,7 @@ export const csrControllerProject: ProjectType = {
         {
             title: 'Github',
             href: 'https://github.com/Martiinii/csr-controller',
-            icon: GitHubLogoIcon
+            icon: GithubIcon
         },
         {
             title: 'NPM Package',

@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from "@radix-ui/react-icons";
+import { ExternalLinkIcon } from "lucide-react";
 import { ProjectType } from ".";
 import cottagesImage from '@/public/projects/smrekowka.png';
 

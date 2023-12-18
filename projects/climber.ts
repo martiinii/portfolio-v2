@@ -1,4 +1,4 @@
-import { ExternalLinkIcon, ReaderIcon } from "@radix-ui/react-icons";
+import { ExternalLinkIcon, ScrollTextIcon } from "lucide-react";
 import { ProjectType } from ".";
 import climberImage from '@/public/projects/climber.png'
 
@@ -18,7 +18,7 @@ export const climberProject: ProjectType = {
         {
             title: 'Post on blog',
             href: '/blog/climber',
-            icon: ReaderIcon
+            icon: ScrollTextIcon
         }
     ]
 }
