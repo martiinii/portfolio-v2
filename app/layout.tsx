@@ -1,12 +1,22 @@
 import './globals.css'
+import localFont from "next/font/local"
 import { cn } from '@/lib/utils'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import localFont from "next/font/local"
 
 const inter = localFont({
     src: './Inter.woff2',
     variable: '--font-sans',
+    display: 'swap',
+    fallback: [
+        "ui-sans-serif",
+        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Arial"
+    ]
 })
 
 
