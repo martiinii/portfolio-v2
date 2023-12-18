@@ -93,6 +93,10 @@
 
 @layer utilities {
     .img-mask {
-        mask-image: linear-gradient(black 50%, rgb(0 0 0 / 0));
+        mask-image: linear-gradient(black 50%, transparent);
+    }
+
+    .img-mask-hero {
+        mask-image: linear-gradient(black 80%, transparent);
     }
 }
