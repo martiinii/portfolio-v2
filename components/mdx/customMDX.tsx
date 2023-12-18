@@ -4,7 +4,7 @@ import { InputMDX } from "./inputMDX"
 import { H1, H2, H3, H4 } from "../typography/headings"
 import { Blockquote, InlineCode, TypographyP } from "../typography/text"
 import { TypographyLI, TypographyOL, TypographyUL } from "../typography/list"
-import { LinkMDX } from "./linkMDX"
+import { InlineLink } from "../ui/inlineLink"
 
 export const CustomMDX = (props: MDXRemoteProps) => {
     return (
@@ -24,7 +24,7 @@ export const CustomMDX = (props: MDXRemoteProps) => {
                 h2: H2,
                 h3: H3,
                 h4: H4,
-                a: LinkMDX,
+                a: InlineLink,
                 p: TypographyP,
                 blockquote: Blockquote,
                 code: InlineCode,
