@@ -1,9 +1,14 @@
-import { cn } from '@/lib/utils'
 import './globals.css'
-import { Inter, } from 'next/font/google'
+import { cn } from '@/lib/utils'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import localFont from "next/font/local"
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = localFont({
+    src: './Inter.woff2',
+    variable: '--font-sans',
+})
+
 
 export const metadata = {
     title: 'Martin | Fullstack web developer',
@@ -17,9 +22,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className='dark'>
-            <body className={cn(inter.className, 'bg-gray-950 min-h-screen')}>
+            <body className={cn("font-sans antialiased bg-gray-950 min-h-screen", inter.variable)}>
                 {children}
                 <Analytics />
+                <SpeedInsights />
             </body>
         </html>
     )
