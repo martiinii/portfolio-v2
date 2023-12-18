@@ -27,7 +27,7 @@ export const Hero = () => (
             className="absolute object-cover select-none -z-50 brightness-[.3] bg-gradient-to-b img-mask-hero"
             draggable={false}
             placeholder="blur"
-            quality={50}
+            quality={30}
         />
         <div className='m-auto px-5 space-y-5'>
             <h1 className='text-6xl sm:text-8xl font-black text-center'>I&apos;m Martin</h1>
