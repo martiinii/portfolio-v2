@@ -9,7 +9,7 @@ type HeroButtonLinkProps = {
 }
 export const HeroButtonLink = ({ href, icon, title, sameTab }: HeroButtonLinkProps) => {
     return (
-        <IconLinkButton className="p-3 h-auto" variant={'outline'}
+        <IconLinkButton className="p-3 h-auto" variant={'ghost'}
             href={href}
             icon={icon}
             iconClassName="h-8 w-8"

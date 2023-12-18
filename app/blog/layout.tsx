@@ -8,7 +8,7 @@ export default function BlogLayout({
     return (
         <>
             <BlogNavbar />
-            <main className="max-w-3xl mx-auto p-6 space-y-6">
+            <main className="max-w-3xl mx-auto p-6 space-y-6 container">
                 {children}
             </main>
         </>

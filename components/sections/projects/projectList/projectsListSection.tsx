@@ -39,7 +39,7 @@ export const ProjectListSection = ({ projects }: ProjectListSectionProps) => {
     const masonryArray = generateArrayChunks(projects, 2);
 
     return (
-        <section className='max-w-7xl m-auto p-6'>
+        <section className='p-6'>
             <header className="text-center mb-8">
                 <h2 className='font-bold text-5xl mb-5'>My projects</h2>
 

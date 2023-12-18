@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <>
             <Hero />
-            <main className='space-y-48'>
+            <main className='space-y-48 container'>
                 <MyProjects />
                 <TechStack />
             </main>

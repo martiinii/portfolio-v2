@@ -11,7 +11,7 @@ export const NewPost = () => {
 
     return (
         <Alert className="w-fit mx-auto group hover:bg-slate-900 transition-colors ">
-            <BellRing />
+            <BellRing className="h-4 w-4" />
             <Link
                 href={`blog/${latestPost.href}`}
                 className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-offset-background"
