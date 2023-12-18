@@ -19,7 +19,8 @@ export default function RootLayout({
             <PostHeader date={post.data.date}>{post.data.title}</PostHeader>
             <Separator />
 
-            <article className="prose prose-invert prose-h3:text-2xl md:prose-xl my-10">
+            {/* prose prose-invert prose-h3:text-2xl md:prose-xl  */}
+            <article className="my-10 text-slate-300">
                 {children}
             </article>
         </>

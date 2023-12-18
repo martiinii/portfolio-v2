@@ -1,8 +1,6 @@
-import { InputMDX } from "@/components/mdx/inputMDX";
+import { CustomMDX } from "@/components/mdx/customMDX";
 import { getPostById, getPostsIds } from "@/lib/blogPosts";
 import { Metadata } from "next";
-import { MDXRemote } from "next-mdx-remote/rsc";
-import remarkGfm from "remark-gfm";
 
 type Props = {
     params: ReturnType<typeof generateStaticParams>[number]
@@ -14,19 +12,8 @@ export default function BlogPost({ params }: Props) {
     if (!post) return;
 
     return (
-        <MDXRemote
+        <CustomMDX
             source={post.content}
-            options={{
-                mdxOptions: {
-                    remarkPlugins: [
-                        remarkGfm
-                    ],
-
-                },
-            }}
-            components={{
-                input: props => <InputMDX {...props} />
-            }}
         />
     )
 }
