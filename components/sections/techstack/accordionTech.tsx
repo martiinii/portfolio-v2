@@ -2,7 +2,7 @@ import { AccordionContent, AccordionItem, AccordionTrigger } from "@/components/
 import { LogoLabel } from "./logoLabel"
 import { ForwardRefExoticComponent, RefAttributes, SVGAttributes } from "react"
 
-type AccordionTechProps = {
+export type AccordionTechProps = {
     icon: ForwardRefExoticComponent<SVGAttributes<SVGSVGElement> & RefAttributes<SVGSVGElement>>,
     label: string,
     children: string
