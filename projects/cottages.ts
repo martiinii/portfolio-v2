@@ -13,12 +13,14 @@ export const cottagesProject: ProjectType = {
         {
             title: 'Smrekówka',
             href: 'https://www.martini.zakopa.net/smrekowka/',
-            icon: ExternalLinkIcon
+            icon: ExternalLinkIcon,
+            disabled: true
         },
         {
             title: 'Niedźwiedzia chata',
             href: 'https://www.martini.zakopa.net/niedzwiedzia_chata/',
-            icon: ExternalLinkIcon
+            icon: ExternalLinkIcon,
+            disabled: true
         }
     ]
 

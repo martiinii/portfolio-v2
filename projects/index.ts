@@ -21,7 +21,8 @@ export type ProjectType = {
 export type LinkType = {
     href: string,
     title: string,
-    icon: LucideIcon
+    icon: LucideIcon,
+    disabled?: boolean
 }
 
 

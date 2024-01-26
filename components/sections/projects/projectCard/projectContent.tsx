@@ -83,19 +83,30 @@ const ProjectLinks = ({ links }: ProjectLinksProps) => {
             <DialogTitle>Links</DialogTitle>
             <div className="flex flex-col gap-4">
                 {links.map(l => {
-                    return (
+                    const LinkElement = l.disabled ? (
+                        <IconButton
+                            icon={l.icon}
+                            variant={'secondary'}
+                            disabled
+                            className="h-auto"
+                        >
+                            {l.title} (Disabled temporary)
+                        </IconButton>
+                    ) : (
                         <IconLinkButton
                             href={l.href}
                             icon={l.icon}
                             title={l.title}
                             variant={'secondary'}
-                            key={l.title}
                             linkProps={{
                                 target: '_blank'
                             }}
                         >
                             {l.title}
                         </IconLinkButton>
+                    )
+                    return (
+                        LinkElement
                     )
                 })}
             </div>
