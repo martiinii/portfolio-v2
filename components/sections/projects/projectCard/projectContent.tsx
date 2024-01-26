@@ -89,6 +89,7 @@ const ProjectLinks = ({ links }: ProjectLinksProps) => {
                             variant={'secondary'}
                             disabled
                             className="h-auto"
+                            key={l.href}
                         >
                             {l.title} (Disabled temporary)
                         </IconButton>
@@ -101,6 +102,7 @@ const ProjectLinks = ({ links }: ProjectLinksProps) => {
                             linkProps={{
                                 target: '_blank'
                             }}
+                            key={l.href}
                         >
                             {l.title}
                         </IconLinkButton>
