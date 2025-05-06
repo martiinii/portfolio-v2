@@ -1,3 +1,7 @@
+# Archive
+I've decided to use one repo for my current and future portfolios under [martiinii/portfolio](https://github.com/martiinii/portfolio). Since this is not latest version of my portfolio anymore, I've decided to archive it.
+
+---
 This is second version of my portfolio. Built with Next.js, TypeScript, Tailwind CSS end shadcn/ui.
 
 ## Getting Started
